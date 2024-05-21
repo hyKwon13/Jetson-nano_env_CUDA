@@ -68,7 +68,7 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 ## 6. 빌드 및 설치
 
 ```bash
-make -j$(nproc) # 오래 걸리는게 정상입니다. 1~2시간 정도 소요됩니다.
+make -j$(nproc) # 1~2시간 정도 소요됩니다.
 sudo make install
 sudo ldconfig
 ```
@@ -93,8 +93,9 @@ nano ~/opencv-4.x/CMakeLists.txt
 
 ### VFPV3 관련 내용 검색
 파일 내에서 VFPV3 키워드를 검색합니다 (Ctrl+W in nano to search). VFPV3과 관련된 기능을 삭제하거나 주석 처리합니다.
-ex)
+
 ```bash
+# ex)
 if(ANDROID)
   if(ANDROID_ABI MATCHES "NEON")
     set(ENABLE_NEON ON)
