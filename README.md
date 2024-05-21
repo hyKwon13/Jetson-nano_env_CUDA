@@ -81,6 +81,9 @@ import cv2
 print(cv2.__version__)
 print(cv2.cuda.getCudaEnabledDeviceCount())
 ```
+## 8. jtop 명령어를 통한 CUDA 설치 확인
+![Project Logo](doc/jetson_nano_2.PNG)
+
 
 ## VFPV3 관련 오류 발생 시 해결 방법
 
