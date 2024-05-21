@@ -99,6 +99,11 @@ nano ~/opencv-4.x/CMakeLists.txt
 
 ```bash
 # 다음 라인을 찾아 수정
+OCV_OPTION(ENABLE_VFPV3 "Enable VFPv3-D32 instructions" OFF)
+```
+
+```bash
+# 다음 라인을 찾아 수정
 set(OPENCV_CPU_BASELINE_COMPILE_DEFINITIONS ${OPENCV_CPU_BASELINE_COMPILE_DEFINITIONS} -DCPU_BASELINE_DISABLE=VFPV3)
 ```
 
