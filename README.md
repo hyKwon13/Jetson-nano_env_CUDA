@@ -92,10 +92,15 @@ nano ~/opencv-4.x/CMakeLists.txt
 ```
 
 ### VFPV3 관련 내용 검색
-파일 내에서 VFPV3 키워드를 검색합니다 (Ctrl+W in nano to search). VFPV3과 관련된 기능을 삭제하거나 주석 처리합니다.
+파일 내에서 VFPV3 키워드를 검색합니다 (Ctrl+W in nano to search). VFPV3과 관련된 내용을 아래와 같이 수정하고 주석처리합니다.
 
 ```bash
-# ex)
+# 다음 라인을 찾아 수정
+set(OPENCV_CPU_BASELINE_COMPILE_DEFINITIONS ${OPENCV_CPU_BASELINE_COMPILE_DEFINITIONS} -DCPU_BASELINE_DISABLE=VFPV3)
+```
+
+```bash
+# 다음 라인을 찾아 주석 처리
 if(ANDROID)
   if(ANDROID_ABI MATCHES "NEON")
     set(ENABLE_NEON ON)
