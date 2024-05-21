@@ -153,6 +153,7 @@ import cv2
 print(cv2.__version__)
 ```
 
+### CUDA 활성화 확인
 이 명령은 설치된 OpenCV의 버전을 출력합니다. 또한, CUDA가 활성화되었는지 확인하려면 다음을 사용할 수 있습니다.
 
 ```bash
