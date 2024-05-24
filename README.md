@@ -1,6 +1,6 @@
 ![Project Logo](doc/jetson_nano_0.jpg)
 
-# 젯슨 나노 CUDA 환경 설정
+# 젯슨 나노 OpenCV CUDA 환경 설정
 
 ## 1. 기존 OpenCV 제거
 Jetson Nano에 이미 설치된 OpenCV를 제거하기 위해 다음 명령어를 실행합니다. 만약 시스템에 패키지 매니저를 통해 설치된 OpenCV가 있다면, 이를 제거해야 합니다.
